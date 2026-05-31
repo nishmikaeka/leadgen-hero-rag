@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #0a0f0a;
+  --primary: #1a1a1a;
+  --accent: #b8f53c;
+  --accent-dark: #8bc220;
+  --accent-muted: #e8fca8;
+  --surface: #ffffff;
+  --surface-2: #f0f5e8;
+  --border: #d4e6b5;
+  --text-muted: #5a6b4a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dot grid background — more visible now */
+.dot-grid {
+  background-image: radial-gradient(circle,
+      rgba(90, 107, 74, 0.18) 1.2px,
+      transparent 1.2px);
+  background-size: 22px 22px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
