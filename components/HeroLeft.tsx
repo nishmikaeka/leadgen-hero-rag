@@ -72,13 +72,14 @@ export default function HeroLeft({ onFaqOpen }: HeroLeftProps) {
           fontWeight: 650,
           lineHeight: 1.1,
           color: "var(--foreground)",
-          fontSize: "clamp(30px, 4vw, 38px)",
+          fontSize: "clamp(32px, 4vw, 38px)",
         }}
       >
-        Transform Your
+        Turn Your Docs
         <br />
-        Company Data Into
+        Into a 24/7 AI
         <br />
+        Support
         <span
           style={{
             display: "inline-block",
@@ -88,35 +89,12 @@ export default function HeroLeft({ onFaqOpen }: HeroLeftProps) {
             borderRadius: "0px",
             transform: "rotate(-1.2deg)",
             transformOrigin: "center",
-            marginRight: "6px",
+            marginLeft: "6px",
           }}
         >
-          Intelligent
+          Assistant.
         </span>
-        Answers.
       </motion.h1>
-
-      {/* Body text — Reduced size */}
-      <motion.p
-        {...fadeUp(0.2)}
-        style={{
-          fontSize: "clamp(13px, 1.9vw, 14px)",
-          color: "var(--text-muted)",
-          lineHeight: 1.6,
-          maxWidth: "430px",
-          fontFamily: "var(--font-inter)",
-        }}
-      >
-        <span className="hidden lg:inline">
-          Stop losing hours digging through internal documentation. Get instant,
-          hyper-accurate answers grounded exclusively in your company knowledge
-          base.
-        </span>
-        <span className="lg:hidden">
-          Get instant, hyper-accurate answers grounded exclusively in your
-          secure company knowledge base.
-        </span>
-      </motion.p>
 
       <motion.ul {...fadeUp(0.3)} className="hidden lg:flex flex-row gap-4">
         {desktopBullets.map(({ label }) => (

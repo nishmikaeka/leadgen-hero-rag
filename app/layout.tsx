@@ -82,7 +82,7 @@ export default function RootLayout({
           {`window.ChatbotConfig = {
   backendUrl: 'http://localhost:3000',
   primaryColor: '#000000',
-  title: 'Suppport Assistant',
+  title: 'Assistant',
 };`}
         </Script>
 
