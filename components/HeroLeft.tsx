@@ -72,7 +72,7 @@ export default function HeroLeft({ onFaqOpen }: HeroLeftProps) {
           fontWeight: 650,
           lineHeight: 1.1,
           color: "var(--foreground)",
-          fontSize: "clamp(32px, 4vw, 38px)",
+          fontSize: "clamp(42px, 4vw, 46px)",
         }}
       >
         Turn Your Docs
