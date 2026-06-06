@@ -4,6 +4,7 @@ import { useState } from "react";
 import HeroLeft from "@/components/HeroLeft";
 import HeroRight from "@/components/HeroRight";
 import FaqModal from "@/components/FaqModal";
+import ScrollIndicator from "@/components/ScrollIndicator";
 import Image from "next/image";
 import Script from "next/script";
 
@@ -116,6 +117,9 @@ export default function Page() {
                     border-radius: 8px; /* Clean edge */
                 }
             `}</style>
+
+      {/* ─── SCROLL INDICATOR ─── */}
+      <ScrollIndicator />
 
       {/* ─── FAQ MODAL ─── */}
       <FaqModal isOpen={faqOpen} onClose={() => setFaqOpen(false)} />
