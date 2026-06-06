@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "Custom AI Chatbots",
     images: [
       {
-        url: "/logoB.png",
+        url: "/Ai chatbot thumbnail.png",
         width: 1200,
         height: 630,
         alt: "Build Custom RAG Chatbots for your business",
@@ -65,6 +65,16 @@ export const metadata: Metadata = {
     title: "Custom RAG Business Chatbots",
     description:
       "Get instant, hyper-accurate answers grounded exclusively in your secure company knowledge base. Fiverr gig starts at $100.",
+  },
+  icons: {
+    icon: [
+      {
+        url: "/favicon.png",
+        sizes: "any",
+        type: "image/png",
+      },
+    ],
+    apple: "/favicon.png",
   },
 };
 
@@ -78,7 +88,7 @@ export default function RootLayout({
     process.env.NEXT_PUBLIC_CHATBOT_BACKEND_URL || "http://localhost:5000";
   const scriptUrl =
     process.env.NEXT_PUBLIC_CHATBOT_SCRIPT_URL ||
-    "http://localhost:5000/widget.js";
+    "http://localhost:3000/widget.js";
 
   return (
     <html lang="en" className={`${jakarta.variable} ${inter.variable}`}>
