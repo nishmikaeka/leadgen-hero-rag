@@ -79,7 +79,6 @@ export default function HeroLeft({ onFaqOpen }: HeroLeftProps) {
         <br />
         Into a 24/7 AI
         <br />
-        Support
         <span
           style={{
             display: "inline-block",

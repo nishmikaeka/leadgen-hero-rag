@@ -73,23 +73,29 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // Pull variables from environment context
+  const backendUrl =
+    process.env.NEXT_PUBLIC_CHATBOT_BACKEND_URL || "http://localhost:5000";
+  const scriptUrl =
+    process.env.NEXT_PUBLIC_CHATBOT_SCRIPT_URL ||
+    "http://localhost:5000/widget.js";
+
   return (
     <html lang="en" className={`${jakarta.variable} ${inter.variable}`}>
       <body>
         {children}
 
+        {/* Dynamic Inline Configuration Script */}
         <Script id="chatbot-config" strategy="afterInteractive">
           {`window.ChatbotConfig = {
-  backendUrl: 'http://localhost:3000',
-  primaryColor: '#000000',
-  title: 'Assistant',
-};`}
+            backendUrl: '${backendUrl}',
+            primaryColor: '#000000',
+            title: 'Assistant',
+          };`}
         </Script>
 
-        <Script
-          src="http://localhost:3000/widget.js"
-          strategy="afterInteractive"
-        />
+        {/* Dynamic Widget Script Source Injection */}
+        <Script src={scriptUrl} strategy="afterInteractive" />
       </body>
     </html>
   );
