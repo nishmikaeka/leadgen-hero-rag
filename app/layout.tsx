@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   title: "Custom RAG Chatbots for Business | Hire an AI Expert",
   description:
     "Stop losing hours digging through internal files. I build hyper-accurate, secure RAG chatbots that integrate exclusively with your PDFs, databases, and Notion. Transform your company data into intelligent, 24/7 answers.",
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+  ),
   keywords: [
     "RAG chatbot developer",
     "custom AI chatbot",
