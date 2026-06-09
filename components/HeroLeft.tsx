@@ -143,7 +143,7 @@ export default function HeroLeft({ onFaqOpen }: HeroLeftProps) {
       >
         <a
           id="fiverr-cta-btn"
-          href="https://fiverr.com"
+          href="https://www.fiverr.com/s/38D2rla"
           target="_blank"
           rel="noopener noreferrer"
           style={{
