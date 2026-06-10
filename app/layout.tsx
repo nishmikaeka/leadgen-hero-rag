@@ -17,12 +17,12 @@ const inter = Inter({
   display: "swap",
 });
 
-export const revalidate = 86400; // Cache page for 24 hours at edge CDN for 0ms load times
+export const revalidate = 300; // Cache page for 24 hours at edge CDN for 0ms load times
 
 export const metadata: Metadata = {
   title: "Custom RAG Chatbots for Business | Hire an AI Expert",
   description:
-    "Stop losing hours digging through internal files. I build hyper-accurate, secure RAG chatbots that integrate exclusively with your PDFs, databases, and Notion. Transform your company data into intelligent, 24/7 answers.",
+    "Build secure RAG chatbots trained on your PDFs, databases, and internal knowledge. Get accurate AI answers for your business.",
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   ),
@@ -50,13 +50,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Custom RAG Chatbots for Business | Zero Hallucinations",
     description:
-      "Transform your company data into instant, highly accurate answers. Build a secure RAG chatbot exclusively trained on your internal documentation. Starts at $100.",
+      "Build secure RAG chatbots trained on your PDFs, databases, and internal knowledge. Get accurate AI answers for your business.",
     type: "website",
     locale: "en_US",
     siteName: "Custom AI Chatbots",
     images: [
       {
-        url: "/Ai chatbot thumbnail.png",
+        url: "/ai-chatbot-thumbnail.png",
         width: 1200,
         height: 630,
         alt: "Build Custom RAG Chatbots for your business",
@@ -67,7 +67,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Custom RAG Business Chatbots",
     description:
-      "Get instant, hyper-accurate answers grounded exclusively in your secure company knowledge base. Fiverr gig starts at $100.",
+      "Get instant, hyper-accurate answers grounded exclusively in your secure company knowledge base.",
+    images: ["/ai-chatbot-thumbnail.png"],
   },
   icons: {
     icon: [
