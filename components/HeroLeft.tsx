@@ -143,7 +143,7 @@ export default function HeroLeft({ onFaqOpen }: HeroLeftProps) {
       >
         <a
           id="fiverr-cta-btn"
-          href="https://www.fiverr.com/s/38D2rla"
+          href="https://www.fiverr.com/s/0bpaP42"
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -181,7 +181,7 @@ export default function HeroLeft({ onFaqOpen }: HeroLeftProps) {
             fontFamily: "var(--font-inter)",
           }}
         >
-          Starts at $100 · Delivered in 3–5 days
+          Starts at $80 · Delivered in 3–5 days
         </p>
 
         {/* Have Questions — low contrast, below CTA */}
